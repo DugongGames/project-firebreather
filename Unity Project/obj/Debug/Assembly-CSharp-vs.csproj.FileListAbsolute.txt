@@ -5,6 +5,7 @@ C:\Users\Jimmy\Documents\GitHub\project-firebreather\Unity Project\Temp\bin\Debu
 C:\Users\Jimmy\Documents\GitHub\project-firebreather\Unity Project\Temp\bin\Debug\Mono.Cecil.dll
 C:\Users\Jimmy\Documents\GitHub\project-firebreather\Unity Project\Temp\bin\Debug\nunit.framework.dll
 C:\Users\Jimmy\Documents\GitHub\project-firebreather\Unity Project\Temp\bin\Debug\ICSharpCode.NRefactory.dll
-C:\Users\Jimmy\Documents\GitHub\project-firebreather\Unity Project\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Jimmy\Documents\GitHub\project-firebreather\Unity Project\obj\Debug\Assembly-CSharp.dll
 C:\Users\Jimmy\Documents\GitHub\project-firebreather\Unity Project\obj\Debug\Assembly-CSharp.pdb
+C:\Users\Jimmy\Documents\GitHub\project-firebreather\Unity Project\Temp\bin\Debug\Unity.DataContract.dll
+C:\Users\Jimmy\Documents\GitHub\project-firebreather\Unity Project\obj\Debug\Assembly-CSharp-vs.csprojResolveAssemblyReference.cache

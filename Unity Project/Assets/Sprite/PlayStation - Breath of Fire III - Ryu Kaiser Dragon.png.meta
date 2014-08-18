@@ -1,0 +1,305 @@
+fileFormatVersion: 2
+guid: 293a3df159ae6d74281b0e82fa97f894
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: PlayStation - Breath of Fire III - Ryu Kaiser Dragon
+    21300002: one
+    21300004: seven
+    21300006: PlayStation - Breath of Fire III - Ryu Kaiser Dragon_2
+    21300008: PlayStation - Breath of Fire III - Ryu Kaiser Dragon_3
+    21300010: fourteen
+    21300012: PlayStation - Breath of Fire III - Ryu Kaiser Dragon_5
+    21300014: PlayStation - Breath of Fire III - Ryu Kaiser Dragon_6
+    21300016: twenty
+    21300018: PlayStation - Breath of Fire III - Ryu Kaiser Dragon_8
+    21300020: PlayStation - Breath of Fire III - Ryu Kaiser Dragon_9
+    21300022: two
+    21300024: three
+    21300026: four
+    21300028: five
+    21300030: six
+    21300032: eight
+    21300034: nine
+    21300036: ten
+    21300038: eleven
+    21300040: twelve
+    21300042: thirteen
+    21300044: fifteen
+    21300046: sixteen
+    21300048: seventeen
+    21300050: eighteen
+    21300052: nineteen
+    21300054: twenty-one
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: one
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 1163
+        width: 220
+        height: 180
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: seven
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 967
+        width: 220
+        height: 180
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fourteen
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 775
+        width: 220
+        height: 180
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: twenty
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 585
+        width: 230
+        height: 180
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PlayStation - Breath of Fire III - Ryu Kaiser Dragon_8
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 198
+        width: 1342
+        height: 189
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PlayStation - Breath of Fire III - Ryu Kaiser Dragon_9
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 6
+        width: 673
+        height: 189
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: two
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 1163
+        width: 219
+        height: 180
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: three
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 1163
+        width: 220
+        height: 180
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: four
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 1163
+        width: 220
+        height: 180
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: five
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 1163
+        width: 219
+        height: 180
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: six
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 1163
+        width: 220
+        height: 180
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: eight
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 967
+        width: 220
+        height: 180
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nine
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 967
+        width: 220
+        height: 180
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ten
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 967
+        width: 220
+        height: 180
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: eleven
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 967
+        width: 220
+        height: 180
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: twelve
+      rect:
+        serializedVersion: 2
+        x: 1226
+        y: 967
+        width: 220
+        height: 180
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thirteen
+      rect:
+        serializedVersion: 2
+        x: 1466
+        y: 967
+        width: 220
+        height: 180
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fifteen
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 775
+        width: 220
+        height: 180
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sixteen
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 775
+        width: 220
+        height: 180
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: seventeen
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 775
+        width: 220
+        height: 180
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: eighteen
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 775
+        width: 220
+        height: 180
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nineteen
+      rect:
+        serializedVersion: 2
+        x: 1457
+        y: 775
+        width: 220
+        height: 180
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: twenty-one
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 585
+        width: 230
+        height: 180
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

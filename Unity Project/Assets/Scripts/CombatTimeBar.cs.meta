@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 1e932df54af038d42ac9fee912ef2e14
+timeCreated: 1437579343
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - bar: {fileID: 2800000, guid: 5ac6de05258dcdc44b2d1c911654ff89, type: 3}
+  - ryu_icon: {fileID: 2800000, guid: 622eb86698cb6e64d94f736b4140d0b6, type: 3}
+  - welp_icon: {fileID: 2800000, guid: a52a719c3d33a49478cd570ca1855241, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

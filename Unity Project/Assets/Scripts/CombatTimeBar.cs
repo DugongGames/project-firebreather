@@ -3,11 +3,32 @@ using System.Collections;
 
 public class CombatTimeBar : MonoBehaviour {
 
-    public Vector2 size = new Vector2(400, 50);
-    public Texture2D bar, ryu_icon, welp_icon;
-    public float ryu_pos = 0, welp_pos = 0;
-    public GUIStyle barStyle, ryuStyle, welpStyle;
+    public Vector2 bar_size = new Vector2(400, 50);
+    public Texture2D bar, icon;
+    public float icon_pos = 0;
+    public GUIStyle bar_style, icon_style;
+    float timer = 0;
 
+    public enum State
+    {
+        Wait,
+        Command,
+        Act
+    }
+
+    private State _state;
+    
+    public State state
+    {
+        get
+        {
+            return _state;
+        }
+        set
+        {
+            _state = value;
+        }
+    }
     //int ryu_speed = 3;
     //int welp_speed = 2;
 
@@ -18,29 +39,46 @@ public class CombatTimeBar : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        ryu_pos = Time.time * 0.05f;
-        welp_pos = Time.time * 0.05f;
+
+        if (state == State.Wait || state == State.Act)
+        {
+            timer += Time.deltaTime;
+
+            icon_pos = timer * 0.06f;
+        }
+
+        if ( state == State.Wait && icon_pos >= 0.75f)
+        {
+            state = State.Command;
+        }
+
+        if (icon_pos >= 1)
+        {
+            state = State.Wait;
+            icon_pos = 0;
+            timer = 0;
+        }
 	}
 
     void OnGUI()
     {
-        GUI.BeginGroup(new Rect(Screen.width - size.x,Screen.height - size.y, size.x, size.y));
-        GUI.Box(new Rect(0,0,size.x,size.y),bar,barStyle);
+        GUI.BeginGroup(new Rect(Screen.width - bar_size.x,Screen.height - bar_size.y, bar_size.x, bar_size.y));
+        GUI.Box(new Rect(0,0,bar_size.x,bar_size.y),bar,bar_style);
 
-            GUI.BeginGroup(new Rect(size.x *ryu_pos,0,size.x,size.y));
-            GUI.Box(new Rect(0,0,size.x,size.y), ryu_icon, ryuStyle);
-
-            GUI.EndGroup();
-
-            GUI.BeginGroup(new Rect(size.x * welp_pos, 0, size.x, size.y));
-            GUI.Box(new Rect(0, 0, size.x, size.y), welp_icon, welpStyle);
+            GUI.BeginGroup(new Rect(bar_size.x *icon_pos,0,bar_size.x,bar_size.y));
+            GUI.Box(new Rect(0,0,bar_size.x,bar_size.y), icon, icon_style);
 
             GUI.EndGroup();
 
         GUI.EndGroup();
 
-        
-        
-        
+        if (state == State.Command)
+        {
+            if (GUI.Button(new Rect(100, 100, 100, 50), "Command"))
+            {
+                state = State.Act;
+            }
+        }
+    
     }
 }

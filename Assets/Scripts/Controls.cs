@@ -13,11 +13,25 @@ public class Controls : MonoBehaviour {
     //float gravity = 20.0f;
     Vector3 moveDirection;
 
+    Vector2[] Directions = new Vector2[] { 
+        new Vector2(0, 0),
+        new Vector2(1, 0), 
+        new Vector2(2, 0), 
+        new Vector2(3, 0), 
+        new Vector2(2, 1), 
+        new Vector2(1, 1), 
+        new Vector2(0, 1), 
+        new Vector2(4, 0) 
+    };
+
+    int dirCount;
+
 
 	// Use this for initialization
 	void Start () {
         //myTransform = transform;
         animator = this.GetComponent<Animator>();
+        dirCount = animator.GetInteger("Direction");
 	}
 	
 	// Update is called once per frame
@@ -85,6 +99,27 @@ public class Controls : MonoBehaviour {
 
         //moves the character controller, ignoring y axis movement
         controller.SimpleMove(moveDirection * moveSpeed);
+
+        if (Input.GetButtonUp("CameraLeft"))
+        {
+            transform.Rotate(Vector3.up, 45.0f, Space.World);
+            Vector2 dir = Directions[Mathf.Abs(dirCount++ % 8)];
+            animator.SetInteger("Direction", (int)dir.x);
+            Debug.Log(dir);
+            if (dir.y > 0)
+                Flip();
+  
+        }
+        if (Input.GetButtonUp("CameraRight"))
+        {
+            transform.Rotate(Vector3.up, -45.0f, Space.World);
+            Vector2 dir = Directions[Mathf.Abs(dirCount-- % 8)];
+            animator.SetInteger("Direction", (int)dir.x);
+            Debug.Log(dir);
+            if (dir.y > 0)
+                Flip();
+             
+        }
 	}
 
     void Flip()

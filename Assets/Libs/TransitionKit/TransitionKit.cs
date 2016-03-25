@@ -155,8 +155,8 @@ namespace Prime31.TransitionKit
 
 			// always reset these in case a transition messed with them
 			transitionKitCamera.orthographic = true;
-			transitionKitCamera.nearClipPlane = -1f;
-			transitionKitCamera.farClipPlane = 1f;
+			transitionKitCamera.nearClipPlane = -30f;
+			transitionKitCamera.farClipPlane = 1000f;
 			transitionKitCamera.depth = float.MaxValue;
 			transitionKitCamera.cullingMask = 1 << _transitionKitLayer;
 			transitionKitCamera.clearFlags = CameraClearFlags.Nothing;

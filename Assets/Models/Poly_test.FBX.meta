@@ -1,0 +1,194 @@
+fileFormatVersion: 2
+guid: aa94d07da57ed7943acf6b06d26b3a04
+timeCreated: 1458920092
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Barrel_High
+    100002: Barrel_Low
+    100004: Barrel_Med
+    100006: Chest_High
+    100008: Chest_Low
+    100010: Chest_Med
+    100012: Corner_Pillar_High
+    100014: Corner_Pillar_Low
+    100016: Corner_Pillar_Med
+    100018: Crate_High
+    100020: Crate_Low
+    100022: Crate_Med
+    100024: Floor_High
+    100026: Floor_Low
+    100028: Floor_Med
+    100030: Platform_High
+    100032: Platform_low
+    100034: Platform_med
+    100036: //RootNode
+    100038: Support_pillar_high
+    100040: Support_Pillar_Low
+    100042: Support_Pillar_Med
+    100044: Table_high
+    100046: Table_low
+    100048: Table_med
+    400000: Barrel_High
+    400002: Barrel_Low
+    400004: Barrel_Med
+    400006: Chest_High
+    400008: Chest_Low
+    400010: Chest_Med
+    400012: Corner_Pillar_High
+    400014: Corner_Pillar_Low
+    400016: Corner_Pillar_Med
+    400018: Crate_High
+    400020: Crate_Low
+    400022: Crate_Med
+    400024: Floor_High
+    400026: Floor_Low
+    400028: Floor_Med
+    400030: Platform_High
+    400032: Platform_low
+    400034: Platform_med
+    400036: //RootNode
+    400038: Support_pillar_high
+    400040: Support_Pillar_Low
+    400042: Support_Pillar_Med
+    400044: Table_high
+    400046: Table_low
+    400048: Table_med
+    2300000: Barrel_High
+    2300002: Barrel_Low
+    2300004: Barrel_Med
+    2300006: Chest_High
+    2300008: Chest_Low
+    2300010: Chest_Med
+    2300012: Corner_Pillar_High
+    2300014: Corner_Pillar_Low
+    2300016: Corner_Pillar_Med
+    2300018: Crate_High
+    2300020: Crate_Low
+    2300022: Crate_Med
+    2300024: Floor_High
+    2300026: Floor_Low
+    2300028: Floor_Med
+    2300030: Platform_High
+    2300032: Platform_low
+    2300034: Platform_med
+    2300036: Support_pillar_high
+    2300038: Support_Pillar_Low
+    2300040: Support_Pillar_Med
+    2300042: Table_high
+    2300044: Table_low
+    2300046: Table_med
+    3300000: Barrel_High
+    3300002: Barrel_Low
+    3300004: Barrel_Med
+    3300006: Chest_High
+    3300008: Chest_Low
+    3300010: Chest_Med
+    3300012: Corner_Pillar_High
+    3300014: Corner_Pillar_Low
+    3300016: Corner_Pillar_Med
+    3300018: Crate_High
+    3300020: Crate_Low
+    3300022: Crate_Med
+    3300024: Floor_High
+    3300026: Floor_Low
+    3300028: Floor_Med
+    3300030: Platform_High
+    3300032: Platform_low
+    3300034: Platform_med
+    3300036: Support_pillar_high
+    3300038: Support_Pillar_Low
+    3300040: Support_Pillar_Med
+    3300042: Table_high
+    3300044: Table_low
+    3300046: Table_med
+    4300000: Corner_Pillar_Low
+    4300002: Corner_Pillar_Med
+    4300004: Support_Pillar_Low
+    4300006: Support_Pillar_Med
+    4300008: Floor_Low
+    4300010: Barrel_Low
+    4300012: Barrel_Med
+    4300014: Barrel_High
+    4300016: Crate_Low
+    4300018: Crate_Med
+    4300020: Crate_High
+    4300022: Chest_Low
+    4300024: Chest_Med
+    4300026: Chest_High
+    4300028: Platform_low
+    4300030: Platform_med
+    4300032: Platform_High
+    4300034: Table_low
+    4300036: Table_med
+    4300038: Table_high
+    4300040: Floor_Med
+    4300042: Floor_High
+    4300044: Support_pillar_high
+    4300046: Corner_Pillar_High
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

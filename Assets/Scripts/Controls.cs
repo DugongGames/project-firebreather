@@ -13,22 +13,22 @@ public class Controls : MonoBehaviour {
     //float gravity = 20.0f;
     Vector3 moveDirection;
 
-    Vector2[] Directions = new Vector2[] { 
+    Vector2[] Directions = new Vector2[] {
+        new Vector2(0, 0),
+        new Vector2(1, 0),
         new Vector2(2, 0),
-        new Vector2(1, 0), 
-        new Vector2(0, 0), 
-        new Vector2(4, 0), 
-        new Vector2(3, 0), 
-        new Vector2(4, 1), 
-        new Vector2(0, 1), 
-        new Vector2(1, 1) 
+        new Vector2(1, 1),
+        new Vector2(0, 1),
+        new Vector2(4, 1),
+        new Vector2(3, 0),
+        new Vector2(4, 0),
     };
 
     int dirCount;
+    float lastDir;
 
-
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
         //myTransform = transform;
         animator = this.GetComponent<Animator>();
         dirCount = animator.GetInteger("Direction");      
@@ -108,9 +108,13 @@ public class Controls : MonoBehaviour {
             Debug.Log(dirCount);
             Debug.Log(animator.GetInteger("Direction"));
             Debug.Log(dir);
-            if (dir.y > 0)
+
+            if (dir.y != lastDir)
+            {
                 Flip();
-  
+            }
+            lastDir = dir.y;
+
         }
         if (Input.GetButtonUp("CameraRight"))
         {
@@ -120,9 +124,12 @@ public class Controls : MonoBehaviour {
             Debug.Log(dirCount);
             Debug.Log(animator.GetInteger("Direction"));
             Debug.Log(dir);
-            if (dir.y > 0)
+            
+            if (dir.y != lastDir)
+            {
                 Flip();
-             
+            }
+            lastDir = dir.y;
         }
 	}
 

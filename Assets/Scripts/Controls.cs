@@ -61,34 +61,40 @@ public class Controls : MonoBehaviour {
             animator.SetInteger("Direction", 0);
             animator.SetFloat("Speed", 1.0f);
             moveSpeed = 7.0f;
+            dirCount = animator.GetInteger("Direction");
         }
         else if (currentDirection == new Vector3(1, 0, 1) || currentDirection == new Vector3(-1, 0, 1))
         {
             animator.SetInteger("Direction", 1);
             animator.SetFloat("Speed", 1.0f);
             moveSpeed = 5.0f;
+            dirCount = animator.GetInteger("Direction");
         }
         else if (currentDirection == new Vector3(0, 0, 1))
         {
             animator.SetInteger("Direction", 2);
             animator.SetFloat("Speed", 1.0f);
             moveSpeed = 7.0f;
+            dirCount = animator.GetInteger("Direction");
         }
         else if (currentDirection == new Vector3(0,0,-1))
         {
             animator.SetInteger("Direction", 3);
             animator.SetFloat("Speed", 1.0f);
             moveSpeed = 7.0f;
+            dirCount = animator.GetInteger("Direction");
         }
         else if (currentDirection == new Vector3(1, 0, -1) || currentDirection == new Vector3(-1, 0, -1))
         {
             animator.SetInteger("Direction", 4);
             animator.SetFloat("Speed", 1.0f);
             moveSpeed = 5.0f;
+            dirCount = animator.GetInteger("Direction");
         }
         else
         {
             animator.SetFloat("Speed", 0f);
+            dirCount = animator.GetInteger("Direction");
         }
 
         if (Input.GetAxisRaw("Horizontal") > 0 && !facingRight)
@@ -99,38 +105,38 @@ public class Controls : MonoBehaviour {
         //myTransform.Translate(xDir + zDir,0,zDir - xDir, Space.World);
         //moves the character controller, ignoring y axis movement
         controller.SimpleMove(moveDirection * moveSpeed);
-
-        if (Input.GetButtonUp("CameraLeft"))
-        {
-            transform.Rotate(Vector3.up, 45.0f, Space.World);
-            Vector2 dir = Directions[Mathf.Abs(++dirCount % 8)];
-            animator.SetInteger("Direction", (int)dir.x);
-            Debug.Log(dirCount);
-            Debug.Log(animator.GetInteger("Direction"));
-            Debug.Log(dir);
-
-            if (dir.y != lastDir)
+            if (Input.GetButtonUp("CameraLeft"))
             {
-                Flip();
-            }
-            lastDir = dir.y;
+                transform.Rotate(Vector3.up, 45.0f, Space.World);
+                Vector2 dir = Directions[mod(++dirCount, 8)];
+                animator.SetInteger("Direction", (int)dir.x);
+                Debug.Log(dirCount);
+                Debug.Log(animator.GetInteger("Direction"));
+                Debug.Log(dir);
 
-        }
-        if (Input.GetButtonUp("CameraRight"))
-        {
-            transform.Rotate(Vector3.up, -45.0f, Space.World);
-            Vector2 dir = Directions[Mathf.Abs(--dirCount % 8)];
-            animator.SetInteger("Direction", (int)dir.x);
-            Debug.Log(dirCount);
-            Debug.Log(animator.GetInteger("Direction"));
-            Debug.Log(dir);
-            
-            if (dir.y != lastDir)
-            {
-                Flip();
+                if (dir.y != lastDir)
+                {
+                    Flip();
+                }
+                lastDir = dir.y;
+
             }
-            lastDir = dir.y;
-        }
+            if (Input.GetButtonUp("CameraRight"))
+            {
+                transform.Rotate(Vector3.up, -45.0f, Space.World);
+
+                Vector2 dir = Directions[mod(--dirCount, 8)];
+                animator.SetInteger("Direction", (int)dir.x);
+                Debug.Log(dirCount);
+                Debug.Log(animator.GetInteger("Direction"));
+                Debug.Log(dir);
+
+                if (dir.y != lastDir)
+                {
+                    Flip();
+                }
+                lastDir = dir.y;
+            }
 	}
 
     void Flip()
@@ -139,5 +145,9 @@ public class Controls : MonoBehaviour {
         Vector3 theScale = transform.localScale;
         theScale.x *= -1;
         transform.localScale = theScale;
+    }
+    int mod(int a, int n)
+    {
+        return ((a % n) + n) % n;
     }
 }

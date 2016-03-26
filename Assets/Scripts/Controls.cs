@@ -14,14 +14,14 @@ public class Controls : MonoBehaviour {
     Vector3 moveDirection;
 
     Vector2[] Directions = new Vector2[] { 
-        new Vector2(0, 0),
+        new Vector2(2, 0),
         new Vector2(1, 0), 
-        new Vector2(2, 0), 
+        new Vector2(0, 0), 
+        new Vector2(4, 0), 
         new Vector2(3, 0), 
-        new Vector2(2, 1), 
-        new Vector2(1, 1), 
+        new Vector2(4, 1), 
         new Vector2(0, 1), 
-        new Vector2(4, 0) 
+        new Vector2(1, 1) 
     };
 
     int dirCount;
@@ -31,8 +31,9 @@ public class Controls : MonoBehaviour {
 	void Start () {
         //myTransform = transform;
         animator = this.GetComponent<Animator>();
-        dirCount = animator.GetInteger("Direction");
+        dirCount = animator.GetInteger("Direction");      
 	}
+
 	
 	// Update is called once per frame
 	void Update () {
@@ -96,15 +97,16 @@ public class Controls : MonoBehaviour {
             Flip();
         //moves the character relative to world space, to ignore the rotation of the sprites
         //myTransform.Translate(xDir + zDir,0,zDir - xDir, Space.World);
-
         //moves the character controller, ignoring y axis movement
         controller.SimpleMove(moveDirection * moveSpeed);
 
         if (Input.GetButtonUp("CameraLeft"))
         {
             transform.Rotate(Vector3.up, 45.0f, Space.World);
-            Vector2 dir = Directions[Mathf.Abs(dirCount++ % 8)];
+            Vector2 dir = Directions[Mathf.Abs(++dirCount % 8)];
             animator.SetInteger("Direction", (int)dir.x);
+            Debug.Log(dirCount);
+            Debug.Log(animator.GetInteger("Direction"));
             Debug.Log(dir);
             if (dir.y > 0)
                 Flip();
@@ -113,8 +115,10 @@ public class Controls : MonoBehaviour {
         if (Input.GetButtonUp("CameraRight"))
         {
             transform.Rotate(Vector3.up, -45.0f, Space.World);
-            Vector2 dir = Directions[Mathf.Abs(dirCount-- % 8)];
+            Vector2 dir = Directions[Mathf.Abs(--dirCount % 8)];
             animator.SetInteger("Direction", (int)dir.x);
+            Debug.Log(dirCount);
+            Debug.Log(animator.GetInteger("Direction"));
             Debug.Log(dir);
             if (dir.y > 0)
                 Flip();

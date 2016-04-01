@@ -8,6 +8,7 @@ public class Controls : MonoBehaviour {
     public Vector3 currentDirection;   
     float moveSpeed;
     bool facingRight = true;
+    bool rotateCamLeft;
 
     //variables for movement with a charater controller
     //float gravity = 20.0f;
@@ -30,8 +31,13 @@ public class Controls : MonoBehaviour {
     void Start () {
         //myTransform = transform;
         animator = this.GetComponent<Animator>();
-        pos = GetObjectPosition(currentDirection);      
-	}
+        //pos = GetObjectPosition(currentDirection);
+
+        // Proably shouldnt be hardcoded, but sets pos to
+        // -1 otherwise, should be getting it from somewhere?
+        animator.SetInteger("Direction", 0);
+        pos = 0;
+    }
 
 
     // Update is called once per frame
@@ -52,34 +58,48 @@ public class Controls : MonoBehaviour {
         //uses the input to determine what direction the character is moving for animation
         currentDirection = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
         //messiest if statement ever to determine what direction character is walking
+
+        // Right
         if (currentDirection == new Vector3(1, 0, 0))
         {
             animator.SetInteger("Direction", 0);
             animator.SetFloat("Speed", 1.0f);
             moveSpeed = 7.0f;
             pos = GetObjectPosition(currentDirection);
+            lastDir = 0;
         }
+
+        //Left
         else if (currentDirection == new Vector3(-1, 0, 0))
         {
             animator.SetInteger("Direction", 0);
             animator.SetFloat("Speed", 1.0f);
             moveSpeed = 7.0f;
             pos = GetObjectPosition(currentDirection);
+            lastDir = 1;
         }
+
+        // Up right
         else if (currentDirection == new Vector3(1, 0, 1))
         {
             animator.SetInteger("Direction", 1);
             animator.SetFloat("Speed", 1.0f);
             moveSpeed = 5.0f;
             pos = GetObjectPosition(currentDirection);
+            lastDir = 0;
         }
+
+        // Up left
         else if (currentDirection == new Vector3(-1, 0, 1))
         {
             animator.SetInteger("Direction", 1);
             animator.SetFloat("Speed", 1.0f);
             moveSpeed = 5.0f;
             pos = GetObjectPosition(currentDirection);
+            lastDir = 1;
         }
+
+        // Up
         else if (currentDirection == new Vector3(0, 0, 1))
         {
             animator.SetInteger("Direction", 2);
@@ -87,6 +107,8 @@ public class Controls : MonoBehaviour {
             moveSpeed = 7.0f;
             pos = GetObjectPosition(currentDirection);
         }
+
+        // Down
         else if (currentDirection == new Vector3(0, 0, -1))
         {
             animator.SetInteger("Direction", 3);
@@ -94,19 +116,25 @@ public class Controls : MonoBehaviour {
             moveSpeed = 7.0f;
             pos = GetObjectPosition(currentDirection);
         }
+
+        // Down right
         else if (currentDirection == new Vector3(1, 0, -1))
         {
             animator.SetInteger("Direction", 4);
             animator.SetFloat("Speed", 1.0f);
             moveSpeed = 5.0f;
             pos = GetObjectPosition(currentDirection);
+            lastDir = 0;
         }
+
+        // Down left
         else if (currentDirection == new Vector3(-1, 0, -1))
         {
             animator.SetInteger("Direction", 4);
             animator.SetFloat("Speed", 1.0f);
             moveSpeed = 5.0f;
             pos = GetObjectPosition(currentDirection);
+            lastDir = 1;
         }
         else
         {
@@ -125,42 +153,44 @@ public class Controls : MonoBehaviour {
         //moves the character controller, ignoring y axis movement
 
         controller.SimpleMove(moveDirection * moveSpeed);
+
         if (Input.GetButtonUp("CameraLeft"))
         {
-
-            transform.Rotate(Vector3.up, 45.0f, Space.World);
-            if (pos == 7)
-                pos = -1;
-            Vector2 dir = Directions[++pos];
-            animator.SetInteger("Direction", (int)dir.x);
-            Debug.Log(pos);
-            Debug.Log(dir);
-
-            if (dir.y != lastDir)
-            {
-                Flip();
-            }
-            lastDir = dir.y;
-
+            rotateCamLeft = true;
+            rotateCamera(rotateCamLeft);
         }
+
         if (Input.GetButtonUp("CameraRight"))
         {
+            rotateCamLeft = false;
+            rotateCamera(rotateCamLeft);
+        }
+    }
 
-            transform.Rotate(Vector3.up, -45.0f, Space.World);
+    void rotateCamera(bool left)
+    {
+        if (left == true)
+        {
+            if (pos == 7)
+                pos = -1;
+            transform.Rotate(Vector3.up, 45.0f, Space.World);
+            ++pos;
+        }
+        else if (left == false)
+        {
             if (pos == 0)
                 pos = 8;
-            Vector2 dir = Directions[--pos];
-            animator.SetInteger("Direction", (int)dir.x);
-            Debug.Log(pos);
-            Debug.Log(dir);
-
-            if (dir.y != lastDir)
-            {
-                Flip();
-            }
-            lastDir = dir.y;
-
+            transform.Rotate(Vector3.up, -45.0f, Space.World);
+            --pos;
         }
+        Vector2 dir = Directions[pos];
+        animator.SetInteger("Direction", (int)dir.x);
+
+        if (dir.y != lastDir)
+        {
+            Flip();
+        }
+        lastDir = dir.y;
 
     }
 

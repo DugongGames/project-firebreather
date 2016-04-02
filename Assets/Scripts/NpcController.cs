@@ -87,4 +87,12 @@ public class NpcController : MonoBehaviour {
         theScale.x *= -1;
         transform.localScale = theScale;
     }
+
+    void OnCollisionStay(Collision col)
+    {
+        if (Input.GetButtonDown("Interact"))
+        {
+            col.gameObject.SendMessage("Interact");
+        }
+    }
 }

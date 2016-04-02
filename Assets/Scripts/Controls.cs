@@ -43,6 +43,7 @@ public class Controls : MonoBehaviour
         pos = 0;
 
         controller = gameObject.GetComponent<CharacterController>();
+
     }
 
 
@@ -65,13 +66,15 @@ public class Controls : MonoBehaviour
             */
             //uses the input to determine what direction the character is moving for animation
             currentDirection = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
+            
+
+            ////Player presses key to interact
+            //if (Input.GetButtonDown("Interact"))
+            //{
+            //    interacting = true;
+            //}
+
             //messiest if statement ever to determine what direction character is walking
-            if (Input.GetButtonDown("Interact"))
-            {
-                interacting = true;
-            }
-
-
             // Right
             if (currentDirection == new Vector3(1, 0, 0))
             {
@@ -279,10 +282,16 @@ public class Controls : MonoBehaviour
     {
         if (interacting)
         {
-            if (GUI.Button(new Rect(100, 100, 100, 50), "Hello"))
+            if (GUI.Button(new Rect(200, 100, 100, 50), "Hello"))
             {
                 interacting = false;
             }
         }
     }
+
+    void Interact()
+    {  
+        interacting = true;
+    }
+
 }

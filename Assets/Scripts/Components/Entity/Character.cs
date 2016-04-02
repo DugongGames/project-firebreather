@@ -1,15 +1,19 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿
+public class Character : Actor {
 
-public class Character : MonoBehaviour {
+    public Character(Stats maxStats, string characterName, Weapon weapon, int characterLevel) :
+        base(maxStats, weapon, characterName, characterLevel)
+    {
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    }
+
+    public Character(Stats maxStats, Stats currentStats, Weapon weapon, string characterName, int characterLevel) :
+        base(maxStats, currentStats, weapon, characterName, characterLevel)
+    {
+
+    }
+
+    
+
+
 }

@@ -5,10 +5,12 @@ using Assets.Scripts;
 public class NpcController : MonoBehaviour
 {
     private CommonControls con;
+    private Renderer renderer;
 
     // Use this for initialization
     void Start () {
-        con = new CommonControls {animator = this.GetComponent<Animator>()};
+        con = new CommonControls {animator = this.GetComponentInChildren<Animator>()};
+        renderer = GetComponentInChildren<Renderer>();
 
         // Proably shouldnt be hardcoded, but sets pos to
         // -1 otherwise, should be getting it from somewhere?

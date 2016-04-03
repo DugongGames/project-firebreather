@@ -38,7 +38,7 @@ public abstract class Actor {
         this.actorName = actorName;
         this.actorState = ActorState.NORMAL;
         this.maxStats = maxStats;
-        this.currentStats = currentStats;
+        this.currentStats = currentStats; 
     }
 
     // Common functions across actors in combat

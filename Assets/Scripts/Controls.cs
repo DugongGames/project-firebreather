@@ -5,19 +5,19 @@ public class Controls : MonoBehaviour
 {
 
     Animator animator;
-    //Transform myTransform;
     public Vector3 currentDirection;
     private CharacterController controller;
     float moveSpeed;
     bool facingRight = true;
-    bool interacting = false;
+    bool interacting;
     bool rotateCamLeft;
+    float lastDir;
+    int pos;
 
     //variables for movement with a charater controller
-    //float gravity = 20.0f;
     Vector3 moveDirection;
 
-    Vector2[] Directions = new Vector2[] {
+    readonly Vector2[] directions = {
         new Vector2(0, 0),
         new Vector2(1, 0),
         new Vector2(2, 0),
@@ -28,14 +28,10 @@ public class Controls : MonoBehaviour
         new Vector2(4, 0),
     };
 
-    float lastDir;
-    int pos;
     // Use this for initialization
     void Start()
     {
-        //myTransform = transform;
         animator = this.GetComponent<Animator>();
-        //pos = GetObjectPosition(currentDirection);
 
         // Proably shouldnt be hardcoded, but sets pos to
         // -1 otherwise, should be getting it from somewhere?
@@ -43,6 +39,7 @@ public class Controls : MonoBehaviour
         pos = 0;
 
         controller = gameObject.GetComponent<CharacterController>();
+
     }
 
 
@@ -51,10 +48,8 @@ public class Controls : MonoBehaviour
     {
         //movement with a character controller
 
-
         if (!interacting)
         {
-
             moveDirection = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
             moveDirection = transform.TransformDirection(moveDirection);
 
@@ -65,12 +60,6 @@ public class Controls : MonoBehaviour
             */
             //uses the input to determine what direction the character is moving for animation
             currentDirection = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
-            //messiest if statement ever to determine what direction character is walking
-            if (Input.GetButtonDown("Interact"))
-            {
-                interacting = true;
-            }
-
 
             // Right
             if (currentDirection == new Vector3(1, 0, 0))
@@ -154,76 +143,67 @@ public class Controls : MonoBehaviour
                 animator.SetFloat("Speed", 0f);
             }
 
-
-
             if (Input.GetAxisRaw("Horizontal") > 0 && !facingRight)
                 Flip();
             else if (Input.GetAxisRaw("Horizontal") < 0 && facingRight)
                 Flip();
 
-
             //moves the character relative to world space, to ignore the rotation of the sprites
             //myTransform.Translate(xDir + zDir,0,zDir - xDir, Space.World);
             //moves the character controller, ignoring y axis movement
-
             controller.SimpleMove(moveDirection * moveSpeed);
-
         }
 
         if (Input.GetButtonUp("CameraLeft"))
         {
             rotateCamLeft = true;
-            rotateCamera(rotateCamLeft);
+            RotateCamera(rotateCamLeft);
         }
 
         if (Input.GetButtonUp("CameraRight"))
         {
             rotateCamLeft = false;
-            rotateCamera(rotateCamLeft);
+            RotateCamera(rotateCamLeft);
         }
     }
 
-    void rotateCamera(bool left)
+    private void RotateCamera(bool left)
     {
-        if (left == true)
+        if (left)
         {
             if (pos == 7)
                 pos = -1;
             transform.Rotate(Vector3.up, 45.0f, Space.World);
             ++pos;
         }
-        else if (left == false)
+        else if (!left)
         {
             if (pos == 0)
                 pos = 8;
             transform.Rotate(Vector3.up, -45.0f, Space.World);
             --pos;
         }
-        Vector2 dir = Directions[pos];
+
+        var dir = directions[pos];
         animator.SetInteger("Direction", (int)dir.x);
 
         if (dir.y != lastDir)
         {
             Flip();
         }
-        lastDir = dir.y;
 
+        lastDir = dir.y;
     }
 
-    void Flip()
+    private void Flip()
     {
         facingRight = !facingRight;
-        Vector3 theScale = transform.localScale;
+        var theScale = transform.localScale;
         theScale.x *= -1;
         transform.localScale = theScale;
     }
 
-    int mod(int a, int n)
-    {
-        return ((a % n) + n) % n;
-    }
-
-    private int GetObjectPosition(Vector3 currentPosition)
+    private static int GetObjectPosition(Vector3 currentPosition)
     {
         // 0,0
         if (currentPosition == new Vector3(1, 0, 0))
@@ -231,43 +211,43 @@ public class Controls : MonoBehaviour
             return 0;
         }
         // 0,1
-        else if (currentPosition == new Vector3(-1, 0, 0))
+        if (currentPosition == new Vector3(-1, 0, 0))
         {
             //correct
             return 4;
         }
         // 1,0
-        else if (currentPosition == new Vector3(1, 0, 1))
+        if (currentPosition == new Vector3(1, 0, 1))
         {
             //correct
             return 1;
         }
         // 1,1
-        else if (currentPosition == new Vector3(-1, 0, 1))
+        if (currentPosition == new Vector3(-1, 0, 1))
         {
             //correct
             return 3;
         }
         // 2,0
-        else if (currentPosition == new Vector3(0, 0, 1))
+        if (currentPosition == new Vector3(0, 0, 1))
         {
             //correct
             return 2;
         }
         // 3,0
-        else if (currentPosition == new Vector3(0, 0, -1))
+        if (currentPosition == new Vector3(0, 0, -1))
         {
             //correct
             return 6;
         }
         // 4,0
-        else if (currentPosition == new Vector3(1, 0, -1))
+        if (currentPosition == new Vector3(1, 0, -1))
         {
             //correct
             return 7;
         }
         //4,1
-        else if (currentPosition == new Vector3(-1, 0, -1))
+        if (currentPosition == new Vector3(-1, 0, -1))
         {
             //correct
             return 5;
@@ -279,10 +259,16 @@ public class Controls : MonoBehaviour
     {
         if (interacting)
         {
-            if (GUI.Button(new Rect(100, 100, 100, 50), "Hello"))
+            if (GUI.Button(new Rect(200, 100, 100, 50), "Hello"))
             {
                 interacting = false;
             }
         }
     }
+
+    void Interact()
+    {  
+        interacting = true;
+    }
+
 }

@@ -1,90 +1,44 @@
 ﻿using UnityEngine;
 using System.Collections;
+using Assets.Scripts;
 
-public class NpcController : MonoBehaviour {
-
-    Animator animator;
-    int pos;
-    float lastDir;
-    public Vector3 currentDirection;
-    public Camera cam;
-    bool facingRight = true;
-    bool rotateCamLeft;
-
-    readonly Vector2[] directions = new Vector2[] {
-        new Vector2(0, 0),
-        new Vector2(1, 0),
-        new Vector2(2, 0),
-        new Vector2(1, 1),
-        new Vector2(0, 1),
-        new Vector2(4, 1),
-        new Vector2(3, 0),
-        new Vector2(4, 0),
-    };
+public class NpcController : MonoBehaviour
+{
+    private CommonControls con;
+    private Renderer renderer;
 
     // Use this for initialization
     void Start () {
-        animator = this.GetComponent<Animator>();
+        con = new CommonControls {animator = this.GetComponentInChildren<Animator>()};
+        renderer = GetComponentInChildren<Renderer>();
 
         // Proably shouldnt be hardcoded, but sets pos to
         // -1 otherwise, should be getting it from somewhere?
-        animator.SetInteger("Direction", 0);
-        pos = 0;
+        con.animator.SetInteger("Direction", 0);
+        con.pos = 0;
     }
 
     // Update is called once per frame
     void Update () {
-
-        transform.LookAt(transform.position + cam.transform.rotation * Vector3.forward,
-            cam.transform.rotation * Vector3.up);
-        animator.SetFloat("Speed", 0f);
+        transform.LookAt(transform.position + con.cam.transform.rotation * Vector3.forward,
+            con.cam.transform.rotation * Vector3.up);
+        con.animator.SetFloat("Speed", 0f);
 
         if (Input.GetButtonUp("CameraLeft"))
         {
-            rotateCamLeft = true;
-            RotateCamera(rotateCamLeft);
+            con.RotateCamera(true, transform);
         }
-
         if (Input.GetButtonUp("CameraRight"))
         {
-            rotateCamLeft = false;
-            RotateCamera(rotateCamLeft);
+            con.RotateCamera(false, transform);
         }
     }
 
-    private void RotateCamera(bool left)
+    void OnCollisionStay(Collision col)
     {
-        if (left)
+        if (Input.GetButtonDown("Interact"))
         {
-            if (pos == 7)
-                pos = -1;
-            transform.Rotate(Vector3.up, 45.0f, Space.World);
-            ++pos;
+            col.gameObject.SendMessage("Interact");
         }
-        else if (!left)
-        {
-            if (pos == 0)
-                pos = 8;
-            transform.Rotate(Vector3.up, -45.0f, Space.World);
-            --pos;
-        }
-
-        var dir = directions[pos];
-        animator.SetInteger("Direction", (int)dir.x);
-
-        if (dir.y != lastDir)
-        {
-            Flip();
-        }
-
-        lastDir = dir.y;
-    }
-
-    private void Flip()
-    {
-        facingRight = !facingRight;
-        var theScale = transform.localScale;
-        theScale.x *= -1;
-        transform.localScale = theScale;
     }
 }

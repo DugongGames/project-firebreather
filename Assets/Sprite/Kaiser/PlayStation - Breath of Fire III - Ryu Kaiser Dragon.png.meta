@@ -1,0 +1,322 @@
+fileFormatVersion: 2
+guid: 293a3df159ae6d74281b0e82fa97f894
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: PlayStation - Breath of Fire III - Ryu Kaiser Dragon
+    21300002: kaiser_1
+    21300004: kaiser_7
+    21300006: PlayStation - Breath of Fire III - Ryu Kaiser Dragon_2
+    21300008: PlayStation - Breath of Fire III - Ryu Kaiser Dragon_3
+    21300010: kaiser_14
+    21300012: PlayStation - Breath of Fire III - Ryu Kaiser Dragon_5
+    21300014: PlayStation - Breath of Fire III - Ryu Kaiser Dragon_6
+    21300016: kaiser20
+    21300018: PlayStation - Breath of Fire III - Ryu Kaiser Dragon_8
+    21300020: PlayStation - Breath of Fire III - Ryu Kaiser Dragon_9
+    21300022: kaiser_2
+    21300024: kaiser_3
+    21300026: kaiser_4
+    21300028: kaiser_5
+    21300030: kaiser_6
+    21300032: kaiser_8
+    21300034: kaiser_9
+    21300036: kaiser_10
+    21300038: kaiser_11
+    21300040: kaiser_12
+    21300042: kaiser_13
+    21300044: kaiser_15
+    21300046: kaiser_16
+    21300048: kaiser_17
+    21300050: kaiser_18
+    21300052: kaiser19
+    21300054: kaiser_21
+    21300056: kaiser_22
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: kaiser_1
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 1163
+        width: 220
+        height: 180
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kaiser_7
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 967
+        width: 220
+        height: 180
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kaiser_14
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 775
+        width: 220
+        height: 180
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kaiser20
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 585
+        width: 230
+        height: 180
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PlayStation - Breath of Fire III - Ryu Kaiser Dragon_8
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 198
+        width: 1342
+        height: 189
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PlayStation - Breath of Fire III - Ryu Kaiser Dragon_9
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 6
+        width: 673
+        height: 189
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kaiser_2
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 1163
+        width: 219
+        height: 180
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kaiser_3
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 1163
+        width: 220
+        height: 180
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kaiser_4
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 1163
+        width: 220
+        height: 180
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kaiser_5
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 1163
+        width: 219
+        height: 180
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kaiser_6
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 1163
+        width: 220
+        height: 180
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kaiser_8
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 967
+        width: 220
+        height: 180
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kaiser_9
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 967
+        width: 220
+        height: 180
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kaiser_10
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 967
+        width: 220
+        height: 180
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kaiser_11
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 967
+        width: 220
+        height: 180
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kaiser_12
+      rect:
+        serializedVersion: 2
+        x: 1226
+        y: 967
+        width: 220
+        height: 180
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kaiser_13
+      rect:
+        serializedVersion: 2
+        x: 1466
+        y: 967
+        width: 220
+        height: 180
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kaiser_15
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 775
+        width: 220
+        height: 180
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kaiser_16
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 775
+        width: 220
+        height: 180
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kaiser_17
+      rect:
+        serializedVersion: 2
+        x: 985
+        y: 775
+        width: 221
+        height: 180
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kaiser_18
+      rect:
+        serializedVersion: 2
+        x: 1225
+        y: 775
+        width: 220
+        height: 180
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kaiser19
+      rect:
+        serializedVersion: 2
+        x: 1453
+        y: 775
+        width: 232
+        height: 180
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kaiser_21
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 585
+        width: 235
+        height: 180
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kaiser_22
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 585
+        width: 236
+        height: 180
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

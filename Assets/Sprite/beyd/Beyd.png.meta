@@ -1,0 +1,1110 @@
+fileFormatVersion: 2
+guid: 2e3f11124a347d84a94d45c85cfe00cf
+timeCreated: 1459713237
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Beyd_0
+    21300002: Beyd_1
+    21300004: Beyd_2
+    21300006: Beyd_3
+    21300008: Beyd_4
+    21300010: Beyd_5
+    21300012: Beyd_6
+    21300014: Beyd_7
+    21300016: Beyd_8
+    21300018: Beyd_9
+    21300020: Beyd_10
+    21300022: Beyd_11
+    21300024: Beyd_12
+    21300026: Beyd_13
+    21300028: Beyd_14
+    21300030: Beyd_15
+    21300032: Beyd_16
+    21300034: Beyd_17
+    21300036: Beyd_18
+    21300038: Beyd_19
+    21300040: Beyd_20
+    21300042: Beyd_21
+    21300044: Beyd_22
+    21300046: Beyd_23
+    21300048: Beyd_24
+    21300050: Beyd_25
+    21300052: Beyd_26
+    21300054: Beyd_27
+    21300056: Beyd_28
+    21300058: Beyd_29
+    21300060: Beyd_30
+    21300062: Beyd_31
+    21300064: Beyd_32
+    21300066: Beyd_33
+    21300068: Beyd_34
+    21300070: Beyd_35
+    21300072: Beyd_36
+    21300074: Beyd_37
+    21300076: Beyd_38
+    21300078: Beyd_39
+    21300080: Beyd_40
+    21300082: Beyd_41
+    21300084: Beyd_44
+    21300086: Beyd_45
+    21300088: Beyd_46
+    21300090: Beyd_48
+    21300092: Beyd_50
+    21300094: Beyd_52
+    21300096: Beyd_54
+    21300098: Beyd_56
+    21300100: Beyd_58
+    21300102: Beyd_60
+    21300104: Beyd_62
+    21300106: Beyd_64
+    21300108: Beyd_66
+    21300110: Beyd_67
+    21300112: Beyd_69
+    21300114: Beyd_70
+    21300116: Beyd_71
+    21300118: Beyd_72
+    21300120: Beyd_73
+    21300122: Beyd_74
+    21300124: Beyd_75
+    21300126: Beyd_76
+    21300128: Beyd_77
+    21300130: Beyd_78
+    21300132: Beyd_79
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Beyd_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 828
+        width: 25
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Beyd_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 826
+        width: 24
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Beyd_2
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 827
+        width: 22
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Beyd_3
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 826
+        width: 26
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Beyd_4
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 828
+        width: 25
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Beyd_5
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 763
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Beyd_6
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 763
+        width: 26
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Beyd_7
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 766
+        width: 25
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Beyd_8
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 767
+        width: 31
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Beyd_9
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 766
+        width: 25
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Beyd_10
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 763
+        width: 26
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Beyd_11
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 763
+        width: 31
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Beyd_12
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 763
+        width: 24
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Beyd_13
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 763
+        width: 26
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Beyd_14
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 763
+        width: 30
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Beyd_15
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 763
+        width: 26
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Beyd_16
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 763
+        width: 24
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Beyd_17
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 698
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Beyd_18
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 698
+        width: 31
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Beyd_19
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 698
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Beyd_20
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 698
+        width: 31
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Beyd_21
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 655
+        width: 35
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3.5, y: 18.5}
+        - {x: -17.5, y: 14.5}
+        - {x: -17.5, y: -1.5}
+        - {x: -5.5, y: -18.5}
+        - {x: 17.5, y: -18.5}
+        - {x: 17.5, y: 18.5}
+    - name: Beyd_22
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 654
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 16}
+        - {x: -18, y: 3}
+        - {x: -18, y: -12}
+        - {x: -12, y: -16}
+        - {x: 15, y: -16}
+        - {x: 18, y: -11}
+        - {x: 18, y: 16}
+    - name: Beyd_23
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 652
+        width: 41
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12.5, y: 16.5}
+        - {x: -20.5, y: 7.5}
+        - {x: -20.5, y: -15.5}
+        - {x: -15.5, y: -16.5}
+        - {x: 18.5, y: -16.5}
+        - {x: 20.5, y: -15.5}
+        - {x: 20.5, y: 3.5}
+        - {x: 16.5, y: 16.5}
+    - name: Beyd_24
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 652
+        width: 41
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16.5, y: 16.5}
+        - {x: -5.5, y: 16.5}
+        - {x: -20.5, y: 0.5}
+        - {x: -20.5, y: -16.5}
+        - {x: 12.5, y: -16.5}
+        - {x: 20.5, y: -13.5}
+        - {x: 20.5, y: 7.5}
+        - {x: 18.5, y: 15.5}
+    - name: Beyd_25
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 652
+        width: 41
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16.5, y: 16.5}
+        - {x: -5.5, y: 16.5}
+        - {x: -20.5, y: 0.5}
+        - {x: -20.5, y: -16.5}
+        - {x: 12.5, y: -16.5}
+        - {x: 20.5, y: -13.5}
+        - {x: 20.5, y: 7.5}
+        - {x: 18.5, y: 15.5}
+    - name: Beyd_26
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 588
+        width: 26
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Beyd_27
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 588
+        width: 26
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Beyd_28
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 532
+        width: 26
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Beyd_29
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 469
+        width: 25
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Beyd_30
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 408
+        width: 24
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Beyd_31
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 408
+        width: 24
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Beyd_32
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 408
+        width: 24
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Beyd_33
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 408
+        width: 24
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Beyd_34
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 326
+        width: 28
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Beyd_35
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 326
+        width: 28
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Beyd_36
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 326
+        width: 28
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Beyd_37
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 326
+        width: 28
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Beyd_38
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 248
+        width: 28
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Beyd_39
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 251
+        width: 53
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6.5, y: 33}
+        - {x: -26.5, y: 8}
+        - {x: -26.5, y: -33}
+        - {x: -4.5, y: -33}
+        - {x: 26.5, y: 22}
+        - {x: 26.5, y: 33}
+    - name: Beyd_40
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 251
+        width: 53
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 33.5}
+        - {x: -26.5, y: 16.5}
+        - {x: -26.5, y: -33.5}
+        - {x: -4.5, y: -33.5}
+        - {x: -4.5, y: -32.5}
+        - {x: 26.5, y: 21.5}
+        - {x: 26.5, y: 33.5}
+    - name: Beyd_41
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 250
+        width: 53
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 33.5}
+        - {x: -26.5, y: 16.5}
+        - {x: -26.5, y: -33.5}
+        - {x: -4.5, y: -33.5}
+        - {x: -4.5, y: -32.5}
+        - {x: 26.5, y: 21.5}
+        - {x: 26.5, y: 33.5}
+    - name: Beyd_44
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 245
+        width: 51
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8.5, y: 15}
+        - {x: -5.5, y: 3}
+        - {x: -8.5, y: 2}
+        - {x: -8.5, y: 1}
+        - {x: -6.5, y: 8}
+        - {x: -3.5, y: 12}
+        - {x: -3.5, y: 14}
+        - {x: -6.5, y: 15}
+        - {x: -20.5, y: 10}
+        - {x: -25.5, y: -13}
+        - {x: -25.5, y: -33}
+        - {x: 25.5, y: -33}
+        - {x: 25.5, y: 12}
+        - {x: 21.5, y: 15}
+      - - {x: 11.5, y: 33}
+        - {x: -2.5, y: 22}
+        - {x: -2.5, y: 16}
+        - {x: 2.5, y: 16}
+        - {x: 6.5, y: 17}
+        - {x: 19.5, y: 29}
+        - {x: 22.5, y: 32}
+        - {x: 22.5, y: 33}
+    - name: Beyd_45
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 246
+        width: 48
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2, y: 22.5}
+        - {x: -24, y: -7.5}
+        - {x: -24, y: -22.5}
+        - {x: 24, y: -22.5}
+        - {x: 24, y: 22.5}
+    - name: Beyd_46
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 185
+        width: 63
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31.5, y: 24.5}
+        - {x: -31.5, y: -24.5}
+        - {x: 13.5, y: -24.5}
+        - {x: 31.5, y: -10.5}
+        - {x: 31.5, y: 24.5}
+    - name: Beyd_48
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 184
+        width: 63
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31.5, y: 24.5}
+        - {x: -31.5, y: -24.5}
+        - {x: 13.5, y: -24.5}
+        - {x: 31.5, y: -10.5}
+        - {x: 31.5, y: 24.5}
+    - name: Beyd_50
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 185
+        width: 63
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31.5, y: 24.5}
+        - {x: -31.5, y: -24.5}
+        - {x: 13.5, y: -24.5}
+        - {x: 31.5, y: -10.5}
+        - {x: 31.5, y: 24.5}
+    - name: Beyd_52
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 184
+        width: 63
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31.5, y: 24.5}
+        - {x: -31.5, y: -24.5}
+        - {x: 13.5, y: -24.5}
+        - {x: 31.5, y: -10.5}
+        - {x: 31.5, y: 24.5}
+    - name: Beyd_54
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 185
+        width: 63
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31.5, y: 24.5}
+        - {x: -31.5, y: -24.5}
+        - {x: 13.5, y: -24.5}
+        - {x: 31.5, y: -10.5}
+        - {x: 31.5, y: 24.5}
+    - name: Beyd_56
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 184
+        width: 63
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31.5, y: 24.5}
+        - {x: -31.5, y: -24.5}
+        - {x: 13.5, y: -24.5}
+        - {x: 31.5, y: -10.5}
+        - {x: 31.5, y: 24.5}
+    - name: Beyd_58
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 185
+        width: 63
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31.5, y: 24.5}
+        - {x: -31.5, y: -24.5}
+        - {x: 13.5, y: -24.5}
+        - {x: 31.5, y: -10.5}
+        - {x: 31.5, y: 24.5}
+    - name: Beyd_60
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 184
+        width: 63
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31.5, y: 24.5}
+        - {x: -31.5, y: -24.5}
+        - {x: 13.5, y: -24.5}
+        - {x: 31.5, y: -10.5}
+        - {x: 31.5, y: 24.5}
+    - name: Beyd_62
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 185
+        width: 63
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31.5, y: 24.5}
+        - {x: -31.5, y: -24.5}
+        - {x: 13.5, y: -24.5}
+        - {x: 31.5, y: -10.5}
+        - {x: 31.5, y: 24.5}
+    - name: Beyd_64
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 184
+        width: 63
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31.5, y: 24.5}
+        - {x: -31.5, y: -24.5}
+        - {x: 13.5, y: -24.5}
+        - {x: 31.5, y: -10.5}
+        - {x: 31.5, y: 24.5}
+    - name: Beyd_66
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 131
+        width: 49
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3.5, y: 22}
+        - {x: -24.5, y: 10}
+        - {x: -24.5, y: -5}
+        - {x: -22.5, y: -8}
+        - {x: -18.5, y: -7}
+        - {x: -24.5, y: -15}
+        - {x: -24.5, y: -22}
+        - {x: 13.5, y: -22}
+        - {x: 24.5, y: -19}
+        - {x: 24.5, y: -4}
+        - {x: 10.5, y: 22}
+    - name: Beyd_67
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 69
+        width: 63
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31.5, y: 24.5}
+        - {x: -31.5, y: -23.5}
+        - {x: -27.5, y: -24.5}
+        - {x: 27.5, y: -24.5}
+        - {x: 31.5, y: -8.5}
+        - {x: 31.5, y: 24.5}
+    - name: Beyd_69
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 68
+        width: 60
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -30, y: 23.5}
+        - {x: -30, y: 19.5}
+        - {x: -29, y: 17.5}
+        - {x: -27, y: -18.5}
+        - {x: -21, y: -23.5}
+        - {x: 26, y: -23.5}
+        - {x: 30, y: -17.5}
+        - {x: 30, y: 23.5}
+    - name: Beyd_70
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 68
+        width: 60
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -30, y: 22.5}
+        - {x: -30, y: -12.5}
+        - {x: -29, y: -17.5}
+        - {x: -21, y: -22.5}
+        - {x: 6, y: -22.5}
+        - {x: 28, y: -16.5}
+        - {x: 30, y: -6.5}
+        - {x: 30, y: 22.5}
+    - name: Beyd_71
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 66
+        width: 55
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 2.5, y: 20}
+        - {x: -2.5, y: 18}
+        - {x: -27.5, y: 4}
+        - {x: -27.5, y: -7}
+        - {x: -24.5, y: -15}
+        - {x: -14.5, y: -20}
+        - {x: 27.5, y: -20}
+        - {x: 27.5, y: 9}
+        - {x: 22.5, y: 20}
+    - name: Beyd_72
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 66
+        width: 55
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26.5, y: 3.5}
+        - {x: -27.5, y: 2.5}
+        - {x: -27.5, y: -4.5}
+        - {x: -23.5, y: -13.5}
+        - {x: -13.5, y: -19.5}
+        - {x: 11.5, y: -19.5}
+        - {x: 27.5, y: -16.5}
+        - {x: 27.5, y: 10.5}
+        - {x: 25.5, y: 19.5}
+        - {x: 3.5, y: 19.5}
+        - {x: -2.5, y: 11.5}
+    - name: Beyd_73
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 66
+        width: 55
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 2.5, y: 20}
+        - {x: -2.5, y: 18}
+        - {x: -27.5, y: 4}
+        - {x: -27.5, y: -7}
+        - {x: -24.5, y: -15}
+        - {x: -14.5, y: -20}
+        - {x: 27.5, y: -20}
+        - {x: 27.5, y: 9}
+        - {x: 22.5, y: 20}
+    - name: Beyd_74
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 11
+        width: 55
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 2.5, y: 20}
+        - {x: -2.5, y: 18}
+        - {x: -27.5, y: 4}
+        - {x: -27.5, y: -7}
+        - {x: -24.5, y: -15}
+        - {x: -14.5, y: -20}
+        - {x: 27.5, y: -20}
+        - {x: 27.5, y: 9}
+        - {x: 22.5, y: 20}
+    - name: Beyd_75
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 11
+        width: 55
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 2.5, y: 20}
+        - {x: -2.5, y: 18}
+        - {x: -27.5, y: 4}
+        - {x: -27.5, y: -7}
+        - {x: -24.5, y: -15}
+        - {x: -14.5, y: -20}
+        - {x: 27.5, y: -20}
+        - {x: 27.5, y: 9}
+        - {x: 22.5, y: 20}
+    - name: Beyd_76
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 11
+        width: 55
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27.5, y: -10}
+        - {x: -16.5, y: -20}
+        - {x: 14.5, y: -20}
+        - {x: 27.5, y: -15}
+        - {x: 27.5, y: -1}
+        - {x: 22.5, y: 20}
+        - {x: -0.5, y: 20}
+        - {x: -27.5, y: 3}
+    - name: Beyd_77
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 11
+        width: 55
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 2.5, y: 20}
+        - {x: -2.5, y: 18}
+        - {x: -27.5, y: 4}
+        - {x: -27.5, y: -7}
+        - {x: -24.5, y: -15}
+        - {x: -14.5, y: -20}
+        - {x: 27.5, y: -20}
+        - {x: 27.5, y: 9}
+        - {x: 22.5, y: 20}
+    - name: Beyd_78
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 11
+        width: 55
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 22.5, y: 20}
+        - {x: -2.5, y: 20}
+        - {x: -27.5, y: 4}
+        - {x: -27.5, y: -19}
+        - {x: -23.5, y: -20}
+        - {x: 20.5, y: -20}
+        - {x: 27.5, y: -16}
+        - {x: 27.5, y: 1}
+        - {x: 24.5, y: 19}
+    - name: Beyd_79
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 11
+        width: 55
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 22.5, y: 20}
+        - {x: -2.5, y: 20}
+        - {x: -27.5, y: 4}
+        - {x: -27.5, y: -19}
+        - {x: -23.5, y: -20}
+        - {x: 20.5, y: -20}
+        - {x: 27.5, y: -16}
+        - {x: 27.5, y: 1}
+        - {x: 24.5, y: 19}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -3,7 +3,7 @@ using System.Collections;
 
 public class MenuSystem : MonoBehaviour
 {
-    private bool isPaused = false;
+    public bool isPaused = false;
 
     enum State
     {
@@ -114,7 +114,6 @@ public class MenuSystem : MonoBehaviour
             isPaused = true;
             state = (state == State.Hide) ? State.Show : State.Hide;
             scene = "start";
-            Debug.Log("Paused");
         }
         // Second press (while paused) unpauses game
         else if (Input.GetButtonUp("Menu") && isPaused)
@@ -123,7 +122,6 @@ public class MenuSystem : MonoBehaviour
             isPaused = false;
             state = (state == State.Hide) ? State.Show : State.Hide;
             scene = "start";
-            Debug.Log("Unpaused");
         }
     }
 }

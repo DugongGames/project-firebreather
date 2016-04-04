@@ -14,6 +14,9 @@ public class Controls : MonoBehaviour
     float lastDir;
     int pos;
 
+    //Used to get paused state
+    private MenuSystem menuScript;
+
     //variables for movement with a charater controller
     Vector3 moveDirection;
 
@@ -39,131 +42,134 @@ public class Controls : MonoBehaviour
         pos = 0;
 
         controller = gameObject.GetComponent<CharacterController>();
-
+        menuScript = GetComponent<MenuSystem>();
     }
 
 
     // Update is called once per frame
     void Update()
     {
-        //movement with a character controller
-
-        if (!interacting)
+        if (menuScript.isPaused == false)
         {
-            moveDirection = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
-            moveDirection = transform.TransformDirection(moveDirection);
 
-            //Movement with transform
-            /*gets the input for movement
-            float xDir = Input.GetAxis("Horizontal") * Time.deltaTime * moveSpeed;
-            float zDir = Input.GetAxis("Vertical") * Time.deltaTime * moveSpeed;
-            */
-            //uses the input to determine what direction the character is moving for animation
-            currentDirection = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
-
-            // Right
-            if (currentDirection == new Vector3(1, 0, 0))
+            //movement with a character controller
+            if (!interacting)
             {
-                animator.SetInteger("Direction", 0);
-                animator.SetFloat("Speed", 1.0f);
-                moveSpeed = 7.0f;
-                pos = GetObjectPosition(currentDirection);
-                lastDir = 0;
+                moveDirection = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
+                moveDirection = transform.TransformDirection(moveDirection);
+
+                //Movement with transform
+                /*gets the input for movement
+                float xDir = Input.GetAxis("Horizontal") * Time.deltaTime * moveSpeed;
+                float zDir = Input.GetAxis("Vertical") * Time.deltaTime * moveSpeed;
+                */
+                //uses the input to determine what direction the character is moving for animation
+                currentDirection = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
+
+                // Right
+                if (currentDirection == new Vector3(1, 0, 0))
+                {
+                    animator.SetInteger("Direction", 0);
+                    animator.SetFloat("Speed", 1.0f);
+                    moveSpeed = 7.0f;
+                    pos = GetObjectPosition(currentDirection);
+                    lastDir = 0;
+                }
+
+                //Left
+                else if (currentDirection == new Vector3(-1, 0, 0))
+                {
+                    animator.SetInteger("Direction", 0);
+                    animator.SetFloat("Speed", 1.0f);
+                    moveSpeed = 7.0f;
+                    pos = GetObjectPosition(currentDirection);
+                    lastDir = 1;
+                }
+
+                // Up right
+                else if (currentDirection == new Vector3(1, 0, 1))
+                {
+                    animator.SetInteger("Direction", 1);
+                    animator.SetFloat("Speed", 1.0f);
+                    moveSpeed = 5.0f;
+                    pos = GetObjectPosition(currentDirection);
+                    lastDir = 0;
+                }
+
+                // Up left
+                else if (currentDirection == new Vector3(-1, 0, 1))
+                {
+                    animator.SetInteger("Direction", 1);
+                    animator.SetFloat("Speed", 1.0f);
+                    moveSpeed = 5.0f;
+                    pos = GetObjectPosition(currentDirection);
+                    lastDir = 1;
+                }
+
+                // Up
+                else if (currentDirection == new Vector3(0, 0, 1))
+                {
+                    animator.SetInteger("Direction", 2);
+                    animator.SetFloat("Speed", 1.0f);
+                    moveSpeed = 7.0f;
+                    pos = GetObjectPosition(currentDirection);
+                }
+
+                // Down
+                else if (currentDirection == new Vector3(0, 0, -1))
+                {
+                    animator.SetInteger("Direction", 3);
+                    animator.SetFloat("Speed", 1.0f);
+                    moveSpeed = 7.0f;
+                    pos = GetObjectPosition(currentDirection);
+                }
+
+                // Down right
+                else if (currentDirection == new Vector3(1, 0, -1))
+                {
+                    animator.SetInteger("Direction", 4);
+                    animator.SetFloat("Speed", 1.0f);
+                    moveSpeed = 5.0f;
+                    pos = GetObjectPosition(currentDirection);
+                    lastDir = 0;
+                }
+
+                // Down left
+                else if (currentDirection == new Vector3(-1, 0, -1))
+                {
+                    animator.SetInteger("Direction", 4);
+                    animator.SetFloat("Speed", 1.0f);
+                    moveSpeed = 5.0f;
+                    pos = GetObjectPosition(currentDirection);
+                    lastDir = 1;
+                }
+                else
+                {
+                    animator.SetFloat("Speed", 0f);
+                }
+
+                if (Input.GetAxisRaw("Horizontal") > 0 && !facingRight)
+                    Flip();
+                else if (Input.GetAxisRaw("Horizontal") < 0 && facingRight)
+                    Flip();
+
+                //moves the character relative to world space, to ignore the rotation of the sprites
+                //myTransform.Translate(xDir + zDir,0,zDir - xDir, Space.World);
+                //moves the character controller, ignoring y axis movement
+                controller.SimpleMove(moveDirection * moveSpeed);
             }
 
-            //Left
-            else if (currentDirection == new Vector3(-1, 0, 0))
+            if (Input.GetButtonUp("CameraLeft"))
             {
-                animator.SetInteger("Direction", 0);
-                animator.SetFloat("Speed", 1.0f);
-                moveSpeed = 7.0f;
-                pos = GetObjectPosition(currentDirection);
-                lastDir = 1;
+                rotateCamLeft = true;
+                RotateCamera(rotateCamLeft);
             }
 
-            // Up right
-            else if (currentDirection == new Vector3(1, 0, 1))
+            if (Input.GetButtonUp("CameraRight"))
             {
-                animator.SetInteger("Direction", 1);
-                animator.SetFloat("Speed", 1.0f);
-                moveSpeed = 5.0f;
-                pos = GetObjectPosition(currentDirection);
-                lastDir = 0;
+                rotateCamLeft = false;
+                RotateCamera(rotateCamLeft);
             }
-
-            // Up left
-            else if (currentDirection == new Vector3(-1, 0, 1))
-            {
-                animator.SetInteger("Direction", 1);
-                animator.SetFloat("Speed", 1.0f);
-                moveSpeed = 5.0f;
-                pos = GetObjectPosition(currentDirection);
-                lastDir = 1;
-            }
-
-            // Up
-            else if (currentDirection == new Vector3(0, 0, 1))
-            {
-                animator.SetInteger("Direction", 2);
-                animator.SetFloat("Speed", 1.0f);
-                moveSpeed = 7.0f;
-                pos = GetObjectPosition(currentDirection);
-            }
-
-            // Down
-            else if (currentDirection == new Vector3(0, 0, -1))
-            {
-                animator.SetInteger("Direction", 3);
-                animator.SetFloat("Speed", 1.0f);
-                moveSpeed = 7.0f;
-                pos = GetObjectPosition(currentDirection);
-            }
-
-            // Down right
-            else if (currentDirection == new Vector3(1, 0, -1))
-            {
-                animator.SetInteger("Direction", 4);
-                animator.SetFloat("Speed", 1.0f);
-                moveSpeed = 5.0f;
-                pos = GetObjectPosition(currentDirection);
-                lastDir = 0;
-            }
-
-            // Down left
-            else if (currentDirection == new Vector3(-1, 0, -1))
-            {
-                animator.SetInteger("Direction", 4);
-                animator.SetFloat("Speed", 1.0f);
-                moveSpeed = 5.0f;
-                pos = GetObjectPosition(currentDirection);
-                lastDir = 1;
-            }
-            else
-            {
-                animator.SetFloat("Speed", 0f);
-            }
-
-            if (Input.GetAxisRaw("Horizontal") > 0 && !facingRight)
-                Flip();
-            else if (Input.GetAxisRaw("Horizontal") < 0 && facingRight)
-                Flip();
-
-            //moves the character relative to world space, to ignore the rotation of the sprites
-            //myTransform.Translate(xDir + zDir,0,zDir - xDir, Space.World);
-            //moves the character controller, ignoring y axis movement
-            controller.SimpleMove(moveDirection * moveSpeed);
-        }
-
-        if (Input.GetButtonUp("CameraLeft"))
-        {
-            rotateCamLeft = true;
-            RotateCamera(rotateCamLeft);
-        }
-
-        if (Input.GetButtonUp("CameraRight"))
-        {
-            rotateCamLeft = false;
-            RotateCamera(rotateCamLeft);
         }
     }
 
